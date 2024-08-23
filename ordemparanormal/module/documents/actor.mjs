@@ -63,6 +63,7 @@ export class OrdemActor extends Actor {
 		const calcNEX = NEX < 99 ? Math.floor(NEX / 5) : 20;
 		const nexAdjust = calcNEX - 1;
 		const nexIf = calcNEX > 1;
+		const nivelAdjust = system.nivel.value - 1;
 		system.PE.perRound = calcNEX;
 		if (system.class == 'fighter') {
 			system.PV.max = 20 + VIG + (nexIf && nexAdjust * (4 + VIG));
@@ -76,6 +77,21 @@ export class OrdemActor extends Actor {
 			system.PV.max = 12 + VIG + (nexIf && nexAdjust * (2 + VIG));
 			system.PE.max = 4 + PRE + (nexIf && nexAdjust * (4 + PRE));
 			system.SAN.max = 20 + (nexIf && nexAdjust * 5);
+		} else if (system.class == 'survivor') {
+			system.PV.max = 8 + VIG + nivelAdjust * 2;
+			
+			if (system.trilha == 'durao') {
+				if (system.nivel.value >= 2) {
+					system.PV.max += 4;
+
+					if (system.nivel.value >= 3) {
+						system.PV.max += 2;
+					}
+				} 
+			}
+
+			//usando a regra de pontos de determinação, suplemento página 104
+			system.PE.max = 4 + PRE + nivelAdjust * 2;
 		} else {
 			system.PV.max = system.PV.max || 0;
 			system.PE.max = system.PE.max || 0;

@@ -43,12 +43,14 @@
 		"effects": "Effects"
 	},
 
-	"ordemparanormal.PV": "Health Points",
-	"ordemparanormal.PE": "Effort Points",
-	"ordemparanormal.pePerRound": "EP / Round",
+	"ordemparanormal.PV": "Health",
+	"ordemparanormal.PE": "Determination",
+	"ordemparanormal.pePerRound": "PD / Round",
 	"ordemparanormal.San": "Sanity",
 	"ordemparanormal.NEX": "NEX",
 	"ordemparanormal.ritualdt": "Ritual DT is",
+	"ordemparanormal.nivel": "Level",
+	"ordemparanormal.inspiration": "Inspiration",
 
 	"ordemparanormal.skill": {
 		"acrobatics": "Acrobatics",

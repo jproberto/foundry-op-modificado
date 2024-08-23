@@ -43,12 +43,14 @@
 		"effects": "Efeitos"
 	},
 
-	"ordemparanormal.PV": "Pontos de Vida",
-	"ordemparanormal.PE": "Pontos de Esforço",
-	"ordemparanormal.pePerRound": "PE / Rodada",
+	"ordemparanormal.PV": "Vida",
+	"ordemparanormal.PE": "Determinação",
+	"ordemparanormal.pePerRound": "PD / Rodada",
 	"ordemparanormal.San": "Sanidade",
 	"ordemparanormal.NEX": "NEX",
 	"ordemparanormal.ritualdt": "DT de Ritual é",
+	"ordemparanormal.nivel": "Nível",
+	"ordemparanormal.inspiration": "Inspiração",
 
 	"ordemparanormal.skill": {
 		"acrobatics": "Acrobacia",

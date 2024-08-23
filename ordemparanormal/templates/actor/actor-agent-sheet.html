@@ -1,14 +1,14 @@
 <form class="{{cssClass}} {{actor.type}} agent" autocomplete="off">
 	{{!-- Sheet Header --}}
-	<div class="header-identify align-center grid grid-3col">
+	<div class="header-identify align-center grid grid-2col">
 		<img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="64" width="64" />
 		<h1 class="charname">
 			<input name="name" type="text" value="{{actor.name}}" placeholder="Name" />
 		</h1>
 		<div class="resource flex-group-center">
-			<label for="system.NEX.value" class="resource-label"> {{localize 'ordemparanormal.NEX'}} </label>
+			<label for="system.inspiration.value" class="resource-label">{{localize 'ordemparanormal.inspiration'}} </label>
 			<div class="resource-content flexrow flex-center flex-between">
-				{{numberInputFVTT system.NEX.value name="system.NEX.value" step=1 min=0 max=99}}
+				<input type="number" name="system.inspiration" value="{{system.inspiration}}" data-dtype="Number" />
 			</div>
 		</div>
 	</div>
@@ -18,15 +18,29 @@
 			"N" can be any number from 1 to 12 and will create that number of columns. --}}
 			<div class="resources grid grid-4col">
 				<div class="resource flex-group-center">
-					<label for="system.PV.value" class="resource-label"> {{localize 'ordemparanormal.PV'}} </label>
+					<label for="system.nivel.value" class="resource-label"> {{localize 'ordemparanormal.nivel'}} </label>
 					<div class="resource-content flexrow flex-center flex-between">
+						{{numberInputFVTT system.nivel.value name="system.nivel.value" step=1 min=0 max=20}}
+					</div>
+				</div>
+				
+				<div class="resource flex-group-center">
+					<label for="system.NEX.value" class="resource-label"> {{localize 'ordemparanormal.NEX'}} </label>
+					<div class="resource-content flexrow flex-center flex-between">
+						{{numberInputFVTT system.NEX.value name="system.NEX.value" step=1 min=0 max=99}}
+					</div>
+				</div>
+			
+				<div class="resource flex-group-center">
+					<label for="system.PV.value" class="resource-label"> {{localize 'ordemparanormal.PV'}} </label>
+					<div class="resource-content flexrow flex-center">
 						<input type="text" name="system.PV.value" value="{{system.PV.value}}" data-dtype="Number" />
 						<span> / </span>
 						<input type="text" name="system.PV.max" value="{{system.PV.max}}" data-dtype="Number" />
 					</div>
 				</div>
 
-				<div class="resource flex-group-center">
+<!--				<div class="resource flex-group-center">
 					<label for="system.SAN.value" class="resource-label">{{localize 'ordemparanormal.San'}} </label>
 					<div class="resource-content flexrow flex-center flex-between">
 						<input type="text" name="system.SAN.value" value="{{system.SAN.value}}" data-dtype="Number" />
@@ -34,35 +48,25 @@
 						<input type="text" name="system.SAN.max" value="{{system.SAN.max}}" data-dtype="Number" />
 					</div>
 				</div>
-
+-->
 				<div class="resource flex-group-center">
 					<label for="system.PE.value" class="resource-label">{{localize 'ordemparanormal.PE'}} </label>
-					<div class="resource-content flexrow flex-center flex-between">
+					<div class="resource-content flexrow flex-center">
 						<input type="text" name="system.PE.value" value="{{system.PE.value}}" data-dtype="Number" />
 						<span> / </span>
 						<input type="text" name="system.PE.max" value="{{system.PE.max}}" data-dtype="Number" />
 					</div>
 				</div>
 
-				<div class="resource flex-group-center">
+<!--				<div class="resource flex-group-center">
 					<label for="system.PE.value" class="resource-label">{{localize 'ordemparanormal.pePerRound'}} </label>
 					<div class="resource-content flexrow flex-center flex-between">
 						<input type="number" name="system.PE.perRound" value="{{system.PE.perRound}}" data-dtype="Number" disabled />
 					</div>
-				</div>
+				</div>  
+-->
 			</div>
 			<div class="resources grid grid-3col">
-				<div class="resource flex-group-center">
-					<label for="{{localize 'ordemparanormal.className'}}" class="resource-label">
-						{{localize 'ordemparanormal.className'}}
-					</label>
-					<div class="resource-content flexrow flex-center flex-between">
-						<select name="system.class" data-dtype="String">
-							{{ selectOptions optionClass selected=system.class localize=true blank="—" }}
-						</select>
-					</div>
-				</div>
-
 				<div class="resource flex-group-center">
 					<label for="{{localize 'ordemparanormal.originName'}}" class="resource-label">
 						{{localize 'ordemparanormal.originName'}}
@@ -70,6 +74,17 @@
 					<div class="resource-content flexrow flex-center flex-between">
 						<select name="system.origin" data-dtype="String">
 							{{ selectOptions optionOrigins selected=system.origin localize=true blank="—" }}
+						</select>
+					</div>
+				</div>
+				
+				<div class="resource flex-group-center">
+					<label for="{{localize 'ordemparanormal.className'}}" class="resource-label">
+						{{localize 'ordemparanormal.className'}}
+					</label>
+					<div class="resource-content flexrow flex-center flex-between">
+						<select name="system.class" data-dtype="String">
+							{{ selectOptions optionClass selected=system.class localize=true blank="—" }}
 						</select>
 					</div>
 				</div>
