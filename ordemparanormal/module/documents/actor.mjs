@@ -232,6 +232,8 @@ export class OrdemActor extends Actor {
 			await Actor.updateDocuments([{ _id: actorData._id, system: { class: 'specialist' } }]);
 		if (system?.class == 'Ocultista')
 			await Actor.updateDocuments([{ _id: actorData._id, system: { class: 'occultist' } }]);
+		if (system?.class == 'Sobrevivente')
+			await Actor.updateDocuments([{ _id: actorData._id, system: { class: 'survivor' } }]);
 
 		// console.log(game.items.invalidDocumentIds);
 		// for (const id of game.actors.invalidDocumentIds) await game.actors.getInvalid(id).delete();

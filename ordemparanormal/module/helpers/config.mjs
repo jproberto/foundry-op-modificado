@@ -124,6 +124,11 @@ ordemparanormal.dropdownTrilha = {
 			label: 'ordemparanormal.trilhas.laminaParanormal',
 		},
 	],
+	survivor: [
+		{ name: 'durao', label: 'ordemparanormal.trilhas.durao' },
+		{ name: 'esperto', label: 'ordemparanormal.trilhas.esperto' },
+		{ name: 'esoterico', label: 'ordemparanormal.trilhas.esoterico' },
+	]
 };
 
 /**

@@ -171,7 +171,10 @@
 		"flagelador": "Flagellator",
 		"graduado": "Graduated",
 		"intuitivo": "Intuitive",
-		"laminaParanormal": "Paranormal Blade"
+		"laminaParanormal": "Paranormal Blade",
+		"durao": "Durão",
+		"esperto": "Esperto",
+		"esoterico": "Esoterico"
 	},
 
 	"ordemparanormal.weight": "Weight",
