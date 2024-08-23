@@ -1,2 +1,4 @@
 # foundry-op-modificado
-Módulo de ordem paranormal para foundry modificado pra mim
+Sistema de ordem paranormal para foundry modificado pras minhas necessidades
+
+Sistema original: https://github.com/SouOWendel/ordemparanormal_fvtt
