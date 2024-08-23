@@ -1,0 +1,7 @@
+<p>Um utens&iacute;lio especial (embora comum hoje em dia). Serve para tirar fotos, gravar &aacute;udios e v&iacute;deos, acessar a internet e at&eacute;, veja s&oacute;, ligar para outras pessoas. Se tiver acesso a internet, fornece +2 em testes de per&iacute;cia que envolvam adquirir informa&ccedil;&otilde;es.</p>
+<p>&nbsp;</p>
+<p>Por fim, possui uma lanterna fraca, mas &uacute;til na falta de um equipamento melhor, que ilumina em um cone de 4,5m.</p>
+<p>&nbsp;</p>
+<p>Na primeira vez que o celular for usado em cada cena, o jogador deve fazer uma rolagem para checar se a bateria est&aacute; carregada. Em um resultado 1, ela n&atilde;o est&aacute;.&nbsp;</p>
+<p>&nbsp;</p>
+<p><button> [[/macroExec "Bateria" itemName="Celular"]]{Checar Bateria}</button> <button> [[/macroExec "Lanterna" itemName="Celular" bright="4.5" dim="9" color="#f7e7d5"]]{Ligar/Desligar Lanterna}</button></p>
