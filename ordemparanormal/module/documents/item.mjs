@@ -193,6 +193,16 @@ export class OrdemItem extends Item {
 		if (!this.system.formulas.attack.attr || !this.system.formulas.attack.skill)
 			throw new Error('This Item does not have a formula to roll!');
 
+		const ammunitionType = this.system.types.ammunitionType;
+		if (ammunitionType == 'shortBullets' || ammunitionType == 'longBullets') {
+			if (this.system.ammunitionQuantity < 1) {
+				ui.notifications.warn('Não tem munição!');
+				return;
+			} else {
+				this.system.ammunitionQuantity--;
+			}
+		}
+
 		const attack = this.system.formulas.attack;
 		const bonus = attack.bonus && '+' + attack.bonus;
 		let attr = attack.attr;

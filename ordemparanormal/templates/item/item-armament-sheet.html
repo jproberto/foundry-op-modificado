@@ -93,6 +93,8 @@
         <select name="system.types.ammunitionType" data-dtype="String" {{inputValid system.types.rangeType.name "ranged" }}>
           {{ selectOptions optionWeaponAmmunition selected=system.types.ammunitionType  localize=true blank="—" }}
         </select>
+        <label class="resource-label">{{localize "ordemparanormal.ammunitionQuantity"}}</label>
+        <input type="text" name="system.ammunitionQuantity" value="{{system.ammunitionQuantity}}" data-dtype="Number" />
         {{/ifEquals}}
       </fieldset>
 

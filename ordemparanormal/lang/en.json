@@ -219,6 +219,7 @@
 	"ordemparanormal.quantidadeUsos": "Quantidade de usos",
 	"ordemparanormal.estaLigado": "Bateria carregada?",
 	"ordemparanormal.lanternaLigada": "Lanterna Ligada?",
+	"ordemparanormal.ammunitionQuantity": "Quantidade de Munição",
 
 	"ordemparanormal.executionChoices": {
 		"free": "Livre",
