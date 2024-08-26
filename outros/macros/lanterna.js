@@ -1,4 +1,4 @@
-//chamar assim:  [[/macroExec "Lanterna" itemName="Celular" bright="4.5" dim="9" color="#f7e7d5"]]{Ligar/Desligar Lanterna}
+//chamar assim:  [[/macroExec "Lanterna" itemName="Celular" bright="3" dim="6" angle ="45" color="#f7e7d5"]]{Ligar/Desligar Lanterna}
 
 main()
 
@@ -36,6 +36,6 @@ async function main(){
 	*/
 	
 	// update light source
-	myTokenCanvas.document.update({ light:{ bright : scope.bright, dim: scope.dim, color: scope.color}} );
+	myTokenCanvas.document.update({ light:{ bright : scope.bright, dim: scope.dim, angle: scope.angle, color: scope.color}} );
 	myItem.system.lanternaLigada = 1;
 }

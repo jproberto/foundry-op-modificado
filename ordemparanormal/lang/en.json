@@ -154,7 +154,9 @@
 		"trabalhadorRural": "Farmer",
 		"trambiqueiro": "Swindler",
 		"universitario": "University Student",
-		"vítima": "Victim"
+		"vítima": "Victim",
+		"legistaTurnoNoite": "Legista do Turno da Noite",
+		"fotografo": "Fotógrafo"
 	},
 
 	"ordemparanormal.trilhasName": "Trails",

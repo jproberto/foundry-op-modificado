@@ -69,6 +69,7 @@ async function main() {
 	}
 	
 	await roll.evaluate();
+	await game.dice3d.showForRoll(roll, game.user, true);
 //	console.log(roll._formula);
 //	console.log(roll.result);
 	

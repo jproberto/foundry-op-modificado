@@ -147,7 +147,9 @@ ordemparanormal.dropdownOrigins = {
 	desgarrado: 'ordemparanormal.originsChoices.desgarrado',
 	engenheiro: 'ordemparanormal.originsChoices.engenheiro',
 	executivo: 'ordemparanormal.originsChoices.executivo',
+	fotografo: 'ordemparanormal.originsChoices.fotografo',
 	investigador: 'ordemparanormal.originsChoices.investigador',
+	legistaTurnoNoite: 'ordemparanormal.originsChoices.legistaTurnoNoite',
 	lutador: 'ordemparanormal.originsChoices.lutador',
 	magnata: 'ordemparanormal.originsChoices.magnata',
 	mercenario: 'ordemparanormal.originsChoices.mercenario',
@@ -162,6 +164,8 @@ ordemparanormal.dropdownOrigins = {
 	trambiqueiro: 'ordemparanormal.originsChoices.trambiqueiro',
 	universitario: 'ordemparanormal.originsChoices.universitario',
 	vítima: 'ordemparanormal.originsChoices.vítima',
+	
+
 };
 
 /**
