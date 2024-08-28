@@ -194,7 +194,7 @@ export class OrdemItem extends Item {
 			throw new Error('This Item does not have a formula to roll!');
 
 		const ammunitionType = this.system.types.ammunitionType;
-		if (ammunitionType == 'shortBullets' || ammunitionType == 'longBullets') {
+		if (ammunitionType == 'shortBullets' || ammunitionType == 'longBullets'|| ammunitionType == 'arrows') {
 			if (this.system.ammunitionQuantity < 1) {
 				ui.notifications.warn('Não tem munição!');
 				return;
@@ -312,7 +312,16 @@ export class OrdemItem extends Item {
 
 		let currentIndex = dieSteps.indexOf(die);
 
-		if (currentIndex === -1) throw new Error(`Die ${die} not found in the steps table`);
+		if (currentIndex === -1) {
+			let split = die.split("d");
+			let max = split[0]*split[1];
+
+			die = "1d"+max;
+			currentIndex = dieSteps.indexOf(die);
+
+			if (currentIndex === -1) throw new Error(`Die ${die} not found in the steps table`);
+		} 
+			
 
 		let newIndex = currentIndex + steps;
 
