@@ -149,6 +149,7 @@ ordemparanormal.dropdownOrigins = {
 	executivo: 'ordemparanormal.originsChoices.executivo',
 	fotografo: 'ordemparanormal.originsChoices.fotografo',
 	investigador: 'ordemparanormal.originsChoices.investigador',
+	jovemMistico: 'ordemparanormal.originsChoices.jovemMistico',
 	legistaTurnoNoite: 'ordemparanormal.originsChoices.legistaTurnoNoite',
 	lutador: 'ordemparanormal.originsChoices.lutador',
 	magnata: 'ordemparanormal.originsChoices.magnata',

@@ -2,6 +2,8 @@
 	<li class="item flexrow items-header">
 		<div class="item-name">{{localize "ordemparanormal.generalEquipment.plural"}}</div>
 		<div class="item-space">{{localize "ordemparanormal.category"}}</div>
+		<div class="item-space">{{localize "ordemparanormal.quantity"}}</div>
+		<div class="item-space">{{localize "ordemparanormal.space"}}</div>
 		<div class="item-controls">
 			<a class="item-control item-create" title="Create item" data-type="generalEquipment">
 				<i class="fas fa-plus"></i>
@@ -21,6 +23,9 @@
 			</a>
 		</div>
 		<div class="item-space item-prop">{{item.system.category}}</div>
+		<div class="item-space item-prop">{{item.system.quantity}}</div>
+		<div class="item-space item-prop">{{item.system.weight}}</div>
+		
 		<div class="item-controls">
 			<a class="item-control send-chat" title="Enviar para o chat"><i class="fas fa-message"></i></a>
 			<a class="item-control mark-item" title="Marcar e desmarcar com item utilizado"
@@ -36,6 +41,7 @@
 	<li class="item flexrow items-header">
 		<div class="item-name">{{localize "ordemparanormal.armament.plural"}}</div>
 		<div class="item-space">{{localize "ordemparanormal.quantity"}}</div>
+		<div class="item-space">{{localize "ordemparanormal.space"}}</div>
 		<div class="item-space">{{localize "ordemparanormal.proficiency"}}</div>
 		<div class="item-space">{{localize "ordemparanormal.critical"}}</div>
 		<div class="item-space">{{localize "ordemparanormal.range"}}</div>
@@ -59,6 +65,7 @@
 			</a>
 		</div>
 		<div class="item-space item-prop">{{item.system.quantity}}</div>
+		<div class="item-space item-prop">{{item.system.weight}}</div>
 		<div class="item-space item-prop">
 			{{#if item.system.proficiency}} {{localize (concat "ordemparanormal.proficiencyChoices." item.system.proficiency)}}
 			{{else}} — {{/if}}
