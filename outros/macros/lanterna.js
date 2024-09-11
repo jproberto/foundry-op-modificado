@@ -18,7 +18,8 @@ async function main(){
 	
 	if(myItem.system.lanternaLigada == 1) {
 		myTokenCanvas.document.update({ light:{ bright : 0, dim: 0}} );
-		myItem.system.lanternaLigada = 0;
+		await myItem.update({"system.lanternaLigada": 0});
+		
 		return;
 	}
 
@@ -37,5 +38,5 @@ async function main(){
 	
 	// update light source
 	myTokenCanvas.document.update({ light:{ bright : scope.bright, dim: scope.dim, angle: scope.angle, color: scope.color}} );
-	myItem.system.lanternaLigada = 1;
+	await myItem.update({"system.lanternaLigada": 1});
 }

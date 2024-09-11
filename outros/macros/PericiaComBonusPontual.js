@@ -29,7 +29,7 @@ async function main() {
 	await game.dice3d.showForRoll(roll, game.user, true);
 	
 	roll.toMessage({
-    speaker: ChatMessage.getSpeaker({ actor: actor }),
-    flavor: `Teste de Perícia: ${skillName}`
-});
+		speaker: ChatMessage.getSpeaker({ actor: actor }),
+		flavor: `Teste de Perícia: ${skillName}`
+	});
 }

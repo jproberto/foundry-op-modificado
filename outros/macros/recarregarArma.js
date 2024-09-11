@@ -46,7 +46,7 @@ async function main() {
 	let newAmmo = Math.min(currentAmmo + reloadAmmount, maxAmmo);
 	weapon.update({ "system.ammunitionQuantity": newAmmo });
 	
-	ammoItem.update({ "system.quantity": ammoQuantity - reloadAmmount });
+	await ammoItem.update({ "system.quantity": ammoQuantity - reloadAmmount });
 	
 	ui.notifications.info(`${weaponName} recarregada!`);
 }

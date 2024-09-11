@@ -23,8 +23,8 @@ async function main() {
 		return;
 	}
 	
-	myItem.system.bateriaCarregada = 1;
-	myItem.system.quantidadeUsos = 0;
+	await myItem.update({"system.bateriaCarregada": 1});
+	await myItem.update({"system.quantidadeUsos": 0});
 	
 	ui.notifications.info("A bateria foi carregada");
 }

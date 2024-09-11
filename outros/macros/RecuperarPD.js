@@ -31,7 +31,7 @@ async function main() {
 	}
 	
 	roll.toMessage({
-    speaker: ChatMessage.getSpeaker({ actor: myTokenActor }),
-    flavor: `Recuperou PD`
-});
+		speaker: ChatMessage.getSpeaker({ actor: myTokenActor }),
+		flavor: `Recuperou PD`
+	});
 }

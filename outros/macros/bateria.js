@@ -82,5 +82,5 @@ async function main() {
 		ui.notifications.info("A bateria continua carregada");
 	}
 	
-	myItem.system.quantidadeUsos += 1;
+	await myItem.update({"system.quantidadeUsos": myItem.system.quantidadeUsos+1});
 }

@@ -28,9 +28,9 @@ async function main() {
 	
 	let formula;
 	if (attr <= 0) {
-		formula = attr+2+"d20kl"+skill.value;
+		formula = attr+2+"d20kl+"+skill.value;
 	} else {
-		formula = skill.formula;
+		formula = attr+"d20kh+"+skill.value;
 	}
 	
 	let roll = new Roll(formula);
@@ -38,7 +38,7 @@ async function main() {
 	await game.dice3d.showForRoll(roll, game.user, true);
 	
 	roll.toMessage({
-    speaker: ChatMessage.getSpeaker({ actor: actor }),
-    flavor: `Teste com Penalidade: ${skillName}`
-});
+		speaker: ChatMessage.getSpeaker({ actor: actor }),
+		flavor: `Teste com Penalidade: ${skillName}`
+	});
 }
