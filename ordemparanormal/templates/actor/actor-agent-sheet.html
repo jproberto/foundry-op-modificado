@@ -112,7 +112,26 @@
 				border, and will center all of its child elements content and text. --}}
 
 				<div class="resource flex-group-center">
-					<label for="system.attributes.dex.value" class="resource-label">{{localize 'ordemparanormal.attDex'}}</label>
+					{{#if system.attributes.dex.value}}
+					<label 
+						for="system.attributes.dex.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="{{system.attributes.dex.value}}d20kh"
+						data-label="Agilidade"
+					>
+							{{localize 'ordemparanormal.attDex'}}
+					</label>
+					{{else}}
+					<label 
+						for="system.attributes.dex.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="2d20kl"
+						data-label="Agilidade"
+					>
+							{{localize 'ordemparanormal.attDex'}}
+					</label>
+					{{/if}}
+
 					<div class="resource-content flexrow flex-center flex-between">
 						<input
 							type="text"
@@ -123,7 +142,26 @@
 				</div>
 
 				<div class="resource flex-group-center">
-					<label for="system.attributes.int.value" class="resource-label">{{localize 'ordemparanormal.attInt'}}</label>
+					{{#if system.attributes.int.value}}
+					<label 
+						for="system.attributes.int.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="{{system.attributes.int.value}}d20kh"
+						data-label="Agilidade"
+					>
+							{{localize 'ordemparanormal.attInt'}}
+					</label>
+					{{else}}
+					<label 
+						for="system.attributes.int.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="2d20kl"
+						data-label="Inteligência"
+					>
+							{{localize 'ordemparanormal.attInt'}}
+					</label>
+					{{/if}}
+
 					<div class="resource-content flexrow flex-center flex-between">
 						<input
 							type="text"
@@ -134,7 +172,26 @@
 				</div>
 
 				<div class="resource flex-group-center">
-					<label for="system.attributes.vit.value" class="resource-label">{{localize 'ordemparanormal.attVit'}}</label>
+					{{#if system.attributes.vit.value}}
+					<label 
+						for="system.attributes.vit.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="{{system.attributes.vit.value}}d20kh"
+						data-label="Vigor"
+					>
+							{{localize 'ordemparanormal.attVit'}}
+					</label>
+					{{else}}
+					<label 
+						for="system.attributes.vit.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="2d20kl"
+						data-label="Vigor"
+					>
+							{{localize 'ordemparanormal.attVit'}}
+					</label>
+					{{/if}}
+					
 					<div class="resource-content flexrow flex-center flex-between">
 						<input
 							type="text"
@@ -145,7 +202,26 @@
 				</div>
 
 				<div class="resource flex-group-center">
-					<label for="system.attributes.pre.value" class="resource-label">{{localize 'ordemparanormal.attPre'}}</label>
+					{{#if system.attributes.pre.value}}
+					<label 
+						for="system.attributes.pre.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="{{system.attributes.pre.value}}d20kh"
+						data-label="Presença"
+					>
+							{{localize 'ordemparanormal.attPre'}}
+					</label>
+					{{else}}
+					<label 
+						for="system.attributes.pre.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="2d20kl"
+						data-label="Presença"
+					>
+							{{localize 'ordemparanormal.attPre'}}
+					</label>
+					{{/if}}
+
 					<div class="resource-content flexrow flex-center flex-between">
 						<input
 							type="text"
@@ -156,9 +232,26 @@
 				</div>
 
 				<div class="resource flex-group-center">
-					<label for="{{localize 'ordemparanormal.AttFor'}}" class="resource-label"
-						>{{localize 'ordemparanormal.attStr'}}</label
+					{{#if system.attributes.str.value}}
+					<label 
+						for="system.attributes.str.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="{{system.attributes.str.value}}d20kh"
+						data-label="Força"
 					>
+							{{localize 'ordemparanormal.attStr'}}
+					</label>
+					{{else}}
+					<label 
+						for="system.attributes.str.value" 
+						class="resource-label rollable flexlarge align-left"
+						data-roll="2d20kl"
+						data-label="Força"
+					>
+							{{localize 'ordemparanormal.attStr'}}
+					</label>
+					{{/if}}
+
 					<div class="resource-content flexrow flex-center flex-between">
 						<input
 							type="text"
