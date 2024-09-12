@@ -199,7 +199,7 @@ export class OrdemItem extends Item {
 				ui.notifications.warn('Não tem munição!');
 				return;
 			} else {
-				this.system.ammunitionQuantity--;
+				await this.update({"system.ammunitionQuantity": this.system.ammunitionQuantity - 1});
 			}
 		}
 
